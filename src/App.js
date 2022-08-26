@@ -1,7 +1,7 @@
 import './App.css';
 import logo from './assets/BridgeLabz-2.jpg'
 import {useState} from 'react'
-import {Routes,Route} from 'react-router-dom'
+
 
 function App() {
   let initialName = {
@@ -24,6 +24,7 @@ function App() {
   }
   return (
     <div className="App">
+     
       <img className="image" src={logo} onClick={onClickLogo}/>
       <h1>Hello From {name.name}</h1>
       <input type="text" onChange={onNameChange}/><br />
